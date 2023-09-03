@@ -27,10 +27,14 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name:  Install Google Chrome # Using shell script to install Google Chrome
-      run:   |
-              chmod +x ./InstallChrome.sh
-              ./InstallChrome.sh
+    - name: Set up chrome          
+      uses: browser-actions/setup-chrome@v1
+      with:
+        chrome-version: stable
+      id: setup-chrome
+    - run: |
+        echo Installed chromium version: ${{ steps.setup-chrome.outputs.chrome-version }}
+        ${{ steps.setup-chrome.outputs.chrome-path }} --version
     - name: Build
       run: mvn --batch-mode -DskipTests package
 
