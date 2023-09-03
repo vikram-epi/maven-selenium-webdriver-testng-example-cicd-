@@ -27,15 +27,6 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    
-    - name: Set up chrome
-      uses: browser-actions/setup-chrome@v1
-      with:
-        chrome-version: '114.0.5735.90'
-      id: setup-chrome
-    - run: |
-        echo Installed chromium version: ${{ steps.setup-chrome.outputs.chrome-version }}
-        ${{ steps.setup-chrome.outputs.chrome-path }} --version
     - name:  Install Google Chrome # Using shell script to install Google Chrome
       run:   |
               chmod +x ./InstallChrome.sh
