@@ -27,7 +27,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Set up chrome          
+    - name:  Install Google Chrome # Using shell script to install Google Chrome
+    - run: |
+              chmod +x ./InstallChrome.sh
+              ./InstallChrome.sh
+    - name: Set up chrome
       uses: browser-actions/setup-chrome@v1
       with:
         chrome-version: stable
