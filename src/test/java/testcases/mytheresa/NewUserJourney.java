@@ -13,6 +13,7 @@ import objectRepository.mytheresa.MytheresaHomePage;
 import objectRepository.mytheresa.MytheresaMyAccountPage;
 
 import static variables.mytheresa.UserVariables.*;
+import testcases.mytheresa.BrowserSetting;
 
 public class NewUserJourney {
 
