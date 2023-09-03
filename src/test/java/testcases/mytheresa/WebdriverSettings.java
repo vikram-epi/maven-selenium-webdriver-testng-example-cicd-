@@ -7,8 +7,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
  
 public class WebdriverSettings {
-	
-	public WebDriver driverSettings() {
+public WebDriver driver;	
+public WebDriver driverSettings() {
  WebDriverManager.chromedriver().setup();
  ChromeOptions options = new ChromeOptions();
  options.addArguments("--no-sandbox");
@@ -17,8 +17,7 @@ public class WebdriverSettings {
  driver = new ChromeDriver(options);
  
  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);  
- driver.manage().window().maximize();  
- driver.get(baseUrl);
+ driver.manage().window().maximize();
  driver.close();
  return driver;
 	}
