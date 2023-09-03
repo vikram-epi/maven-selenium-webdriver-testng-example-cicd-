@@ -15,7 +15,8 @@ public class BrowserSetting {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.get(BASE_URL);
+		//driver.get(BASE_URL);
+		driver.close();
 		return driver;
 	}
 
