@@ -29,7 +29,7 @@ jobs:
         cache: maven
     - name:  Install Google Chrome # Using shell script to install Google Chrome
     - run: |
-              chmod +x ./InstallChrome.sh
+              chmod 777 ./InstallChrome.sh
               ./InstallChrome.sh
     - name: Set up chrome
       uses: browser-actions/setup-chrome@v1
