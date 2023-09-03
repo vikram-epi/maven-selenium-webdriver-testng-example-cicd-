@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-import org.slf4j.impl.StaticLoggerBinder.*;
+import org.slf4j.impl.StaticLoggerBinder;
 import objectRepository.mytheresa.MytheresaAccountInformationPage;
 import objectRepository.mytheresa.MytheresaCreateAccountPage;
 import objectRepository.mytheresa.MytheresaHomePage;
