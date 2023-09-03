@@ -12,6 +12,8 @@ import objectRepository.mytheresa.MytheresaNewArraivalThisWeekPage;
 import objectRepository.mytheresa.MytheresaWishListPage;
 
 import static variables.mytheresa.UserVariables.*;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import testcases.mytheresa.BrowserSetting;
 
 public class WishListCheckAdd {
 
