@@ -11,6 +11,6 @@ sudo chown root:root /opt/google/chrome/chrome
 sudo chmod 777 /opt/google/chrome/chrome
 wget https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.1.0/selenium-server-4.1.2.jar
 mv selenium-server-4.1.2.jar selenium-server.jar
-java -jar selenium.jar
+java -jar selenium-server.jar
 #sudo apt install xvfb
 xvfb-run java -Dwebdriver.chrome.driver=/opt/google/chrome/chrome -jar selenium-server.jar
