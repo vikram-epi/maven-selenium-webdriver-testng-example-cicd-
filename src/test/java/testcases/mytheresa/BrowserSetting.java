@@ -1,8 +1,6 @@
 package testcases.mytheresa;
-
+import testcases.mytheresa.WebdriverSettings;
 import java.util.concurrent.TimeUnit;
-
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import static variables.mytheresa.UrlVariables.*;
